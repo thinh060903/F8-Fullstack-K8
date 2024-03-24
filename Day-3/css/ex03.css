@@ -1,0 +1,47 @@
+.info {
+  display: grid;
+  grid-template-columns: 150px 200px;
+  margin-bottom: 10px;
+}
+input {
+  border: 1px solid #34aae6;
+}
+.radio {
+  display: flex;
+}
+.checkbox {
+  display: flex;
+}
+select {
+  border-color: #34aae6;
+  text-align: center;
+  width: fit-content;
+}
+
+select:focus {
+  background-color: #34aae6;
+  color: white;
+}
+
+.checkbox {
+  border-color: #34aae6;
+}
+.form-select {
+  display: grid;
+  grid-template-columns: 150px 200px;
+  align-items: center;
+}
+.info2 {
+  align-items: center;
+}
+.radio {
+  display: flex;
+  flex-direction: column;
+}
+.checkbox {
+  display: flex;
+  flex-direction: column;
+}
+button {
+  margin-top: 15px;
+}

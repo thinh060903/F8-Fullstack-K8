@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai3</title>
+    <link rel="stylesheet" href="./css/ex03.css">
+</head>
+<body>
+    <h1>HTML FORM</h1>
+    <form action="https://api-gateway.fullstack.edu.vn/action_page.php" method="get">
+        <!-- Trường nhập liệu (field) -->
+        <div class="info">
+            <label for="username">Username: </label>
+            <input type="text" id="username" name="username" >
+        </div>
+        <div class="info">
+            <label for="password">Password: </label>
+            <input type="password" id="password" name="password">
+        </div>
+        <div class="info">
+            <label for="city">City of Employment: </label>
+            <input type="text" id="city" name="city" >
+        </div>
+        <div class="info">
+            <label for="server">Web server: </label>
+            <select name="server" id="server">
+                <option value="0" selected>--Choose a server--</option>
+                <option value="option1">Option 1</option>
+                <option value="option2">Option 2</option>
+                <option value="option3">Option 3</option>
+            </select>
+        </div>
+        <div class="form-select">
+            <div class="info2">Please specify your role: </div>
+            <div class="radio">
+                <div>
+                    <input type="radio" id="radio1" name="role" value="0">
+                    <label for="radio1">Admin</label> 
+                </div>
+                <div>
+                    <input type="radio" id="radio2" name="role" value="1"> 
+                    <label for="radio2">Engineer</label>
+                </div>
+                <div>
+                    <input type="radio" id="radio3" name="role" value="2"> 
+                    <label for="radio3">Manager</label>
+                </div>
+                <div>
+                    <input type="radio" id="radio4" name="role" value="3"> 
+                    <label for="radio4">Guest</label>
+                </div>
+            </div>
+        </div>
+        <div class="form-select">
+            <div class="info2">Single Sign-on to the following: </div>
+            <div class="checkbox">
+                <div>
+                    <input type="checkbox" id="checkbox1" name="source[]" value="mail">
+                    <label for="checkbox1">Mail</label> 
+                </div>
+                <div>
+                    <input type="checkbox" id="checkbox2" name="source[]" value="payroll">
+                    <label for="checkbox2">Payroll</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="checkbox3" name="source[]" value="self-service"> 
+                    <label for="checkbox3">Self-service</label>
+                </div>
+                
+            </div>
+        </div>
+        <!-- Nút gửi dữ liệu (submit) -->
+        <div class="form-select">
+            <div>
+                <input type="hidden" value="abc">
+            </div>
+            <div>
+                <button type="submit">Login</button>
+                <button type="reset">Reset</button>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
