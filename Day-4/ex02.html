@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai2</title>
+    <link rel="stylesheet" href="./css/ex02.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <form action="https://api-gateway.fullstack.edu.vn/action_page.php" method="get">
+        <header>
+            <div class="title-1">
+                <label for="title-1">RESERVATION</label>
+            </div>
+            <div class="title-2">
+                <label for="title-2">Book your table</label>
+            </div>
+        </header>
+        <body>
+            <div class="grid-container">
+                <div class="input-form-1">
+                    <div class="input">
+                        <input type="name" id="name" name="name" placeholder="NAME">
+                    </div>
+                    <div class="input">
+                        <input type="date" id="date" name="DATE" placeholder="DATE">
+                    </div>
+                    <div class="input">
+                        <input type="text" id="people" name="people" placeholder="PEOPLE">
+                    </div>
+                    
+                </div>
+                <div class="input-form-2">
+                    <div class="input">
+                        <input type="email" id="email" name="email" placeholder="EMAIL">
+                    </div>
+                    <div class="input">
+                        <input type="time" id="time" name="time">
+                    </div>
+                    <button type="submit">Find A Table</button>
+                </div>
+            </div>
+        </body>
+    </form>
+</body>
+</html>

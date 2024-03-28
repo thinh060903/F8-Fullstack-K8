@@ -1,0 +1,43 @@
+.title-1 {
+  text-align: center;
+  font-family: "Bebas Neue", sans-serif;
+  color: hsl(25.71deg 43.21% 15.88%);
+  font-size: 30px;
+  padding-top: 20px;
+}
+.title-2 {
+  text-align: center;
+  font-family: "Alfa Slab One", sans-serif;
+  color: hsl(25.71deg 43.21% 15.88%);
+  font-size: 50px;
+  padding-top: 20px;
+  margin-bottom: 20px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  gap: 20px;
+}
+
+input {
+  width: 320px;
+  height: 35px;
+  margin-bottom: 20px;
+  font-family: "Bebas Neue", sans-serif;
+  padding-left: 10px;
+  font-size: 18px;
+  background-color: white;
+  border: 1px solid hsl(0deg 0% 87.06%);
+}
+button {
+  width: 335px;
+  height: 38px;
+  margin-bottom: 20px;
+  font-family: "Alfa Slab One", sans-serif;
+  border-radius: 4px;
+  border: 0px;
+  background-color: hsl(3.61deg 60.18% 43.33%);
+  color: white;
+}
