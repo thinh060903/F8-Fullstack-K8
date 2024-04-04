@@ -1,0 +1,70 @@
+@import url("./fonts.css");
+
+body {
+  background-color: hsl(210deg 80% 96.08%);
+}
+/* h1::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 4px;
+  background-color: blue;
+  margin: auto;
+  margin-top: 10px;
+} */
+
+.feedback-item {
+  background-color: white;
+  border: 2px solid #000000;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  padding: 20px;
+  font-family: "Lato", sans-serif;
+  box-shadow: 10px 10px 5px -7px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 5px -7px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px -7px rgba(0, 0, 0, 0.75);
+}
+
+img {
+  border-radius: 50px;
+  width: 75px;
+  float: left;
+  margin-right: 10px;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  margin-top: 20px;
+  cursor: pointer;
+  color: hsl(229.35deg 100% 45.29%);
+  font-size: 15px;
+  font-weight: 600;
+}
+
+div.feedback-list {
+  display: grid;
+  column-gap: 50px;
+  grid-template-columns: auto auto auto;
+
+  /* padding: 20px; */
+  margin-top: 40px;
+  color: black;
+}
+
+h2 {
+  position: relative;
+}
+p {
+  padding-top: 10px;
+  font-weight: 300;
+}
+
+.feedback-item:hover {
+  border: 3px solid red;
+}
+
+.avatar {
+  display: grid;
+  grid-template-columns: auto auto;
+}

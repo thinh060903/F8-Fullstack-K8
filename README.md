@@ -35,3 +35,7 @@
 <a href="./Day-5/ex03.html">Bài 3</a>
 
 ## Buổi 6
+
+<a href="./Day-6/ex01.html">Bài 1</a>
+<a href="./Day-6/ex02.html">Bài 2</a>
+<a href="./Day-6/ex03.html">Bài 3</a>
