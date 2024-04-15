@@ -132,8 +132,3 @@ button:hover {
   border: 1px solid hsl(221.61deg 63.13% 57.45%);
   transition: 0.2s;
 }
-span::after {
-  content: "";
-  width: 90px;
-  height: 100px;
-}
