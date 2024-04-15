@@ -1,0 +1,113 @@
+@import url("./fonts.css");
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  margin: 30px auto;
+  font-family: "Lato";
+}
+
+.information {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 30px;
+  margin: 10px 5%;
+}
+
+.content {
+  border: 1px solid rgb(171, 167, 167);
+  padding: 30px 25px;
+  background-size: cover;
+}
+
+.content > .border > i {
+  color: hsl(20.61deg 48.29% 40.2%);
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.title {
+  margin-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.title > a {
+  color: black;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+p {
+  font-weight: 300;
+}
+
+.more {
+  display: none;
+}
+
+.more > a {
+  color: white;
+}
+
+.content:hover {
+  background: url("../images/1048-300x200.jpg");
+  color: white;
+  transition: 0.2s;
+  background-size: cover;
+  position: relative;
+  z-index: 2;
+}
+
+.content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* width: 100%; Set width to 100% of the content element
+  height: 100%; Set height to 100% of the content element */
+  background-color: hsla(20.61deg 48.29% 40.2%);
+  opacity: 0.8;
+  background-size: cover;
+  z-index: 1;
+}
+
+.content:hover > .border {
+  transition: 0.2s;
+  border: 1px solid white;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.content:hover > .border > .title > a {
+  color: white;
+}
+
+.content:hover > .border > i {
+  display: none;
+}
+
+.content:hover > .border > .more {
+  display: block;
+  margin-top: 15px;
+  width: fit-content;
+  transform: 0.2;
+}
+
+.more > a > i {
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 50%;
+  margin-left: 8px;
+}
+
+.more:hover > a > i {
+  padding: 10px;
+  background-color: white;
+  border-radius: 50%;
+  color: black;
+  transition: 0.2s;
+}
