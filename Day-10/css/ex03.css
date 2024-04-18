@@ -1,0 +1,90 @@
+body {
+  background: #323641;
+}
+
+.mail {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  height: 200px;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.animated {
+  position: absolute;
+  height: 150px;
+  width: 200px;
+  transition: 0.4s;
+}
+
+.back-fold {
+  position: absolute;
+  bottom: 0;
+  width: 200px;
+  height: 100px;
+  background: #cf4a43;
+  z-index: 0;
+}
+
+.body {
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0px 0px 100px 200px;
+  border-color: transparent transparent #e95f55 transparent;
+  z-index: 2;
+}
+
+.left-fold {
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 50px 0px 50px 100px;
+  border-color: transparent #e15349;
+  z-index: 2;
+}
+
+.top-fold {
+  position: absolute;
+  top: 50px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 50px 100px 0px 100px;
+  transform-origin: 50% 0%;
+  transition: transform 0.4s 0.4s, z-index 0.2s 0.4s;
+  border-color: #cf4a43 transparent transparent transparent;
+  z-index: 2;
+}
+
+.letter {
+  left: 20px;
+  bottom: 0px;
+  position: absolute;
+  width: 160px;
+  height: 60px;
+  background: white;
+  z-index: 1;
+  overflow: hidden;
+  transition: 0.4s 0.2s;
+}
+
+.animated:hover {
+  transform: translateY(50px);
+}
+
+.animated:hover > .top-fold {
+  transition: transform 0.4s, z-index 0.3s;
+  transform: rotateX(180deg);
+  z-index: 0;
+}
+
+.animated:hover > .letter {
+  height: 200px;
+}

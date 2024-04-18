@@ -1,0 +1,80 @@
+@font-face {
+  font-family: Lato;
+  src: url("../fonts/Lato-Light.ttf");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: Lato;
+  src: url("../fonts/Lato-LightItalic.ttf");
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: Lato;
+  src: url("../fonts/Lato-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: Lato;
+  src: url("../fonts/Lato-Italic.ttf");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: Lato;
+  src: url("../fonts/Lato-Bold.ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: Lato;
+  src: url("../fonts/Lato-BoldItalic.ttf");
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: Lobster;
+  src: url("../fonts/Lobster-Regular.ttf");
+}
+@font-face {
+  font-family: OpenSans;
+  src: url("../fonts/OpenSans-VariableFont_wdth\,wght.ttf");
+  font-style: normal;
+}
+@font-face {
+  font-family: OpenSans;
+  src: url("../fonts/OpenSans-Italic-VariableFont_wdth\,wght.ttf");
+  font-style: italic;
+}
+@font-face {
+  font-family: Nunito;
+  src: url("../fonts/NunitoSans-VariableFont_YTLC\,opsz\,wdth\,wght.ttf");
+  font-style: normal;
+}
+@font-face {
+  font-family: Nunito;
+  src: url("../fonts/NunitoSans-Italic-VariableFont_YTLC\,opsz\,wdth\,wght.ttf");
+  font-style: italic;
+}
+@font-face {
+  font-family: Asap;
+  src: url("../fonts/Asap-VariableFont_wdth\,wght.ttf");
+  font-style: normal;
+}
+@font-face {
+  font-family: Asap;
+  src: url("../fonts/Asap-Italic-VariableFont_wdth\,wght.ttf");
+  font-style: italic;
+}
+@font-face {
+  font-family: Inter;
+  src: url("../fonts/Inter-VariableFont_slnt\,wght.ttf");
+  font-style: normal;
+}
+@font-face {
+  font-family: Space_Grotesk;
+  src: url("../fonts/SpaceGrotesk-VariableFont_wght.ttf");
+  font-style: normal;
+}

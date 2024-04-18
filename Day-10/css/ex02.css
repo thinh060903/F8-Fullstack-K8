@@ -1,0 +1,90 @@
+@import url("./fonts.css");
+
+body {
+  background-color: #eee;
+  font-family: "Lato";
+}
+
+.container {
+  width: 700px;
+  margin: 30px auto;
+  min-height: 300px;
+}
+
+.list {
+  position: relative;
+  font-size: 0;
+  text-align: left;
+}
+
+input {
+  display: none;
+  position: absolute;
+}
+
+.list > label {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 1px;
+  font-size: 15px;
+  line-height: 45px;
+  cursor: pointer;
+}
+
+.list > label span {
+  display: block;
+  padding: 5px;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.list > label span span {
+  padding: 0 15px;
+  transition: background 0.2s, color 0.4s;
+  user-select: none;
+}
+
+.list > label:hover span span {
+  background: #3498db;
+  color: white;
+}
+.list > input:checked + label span span {
+  background: #3498db;
+  color: white;
+}
+
+.list ul {
+  list-style: none;
+  position: relative;
+  display: block;
+  font-size: 15px;
+  padding: 0;
+  margin-top: 1px;
+}
+
+.list > ul > li {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 655px;
+  overflow: auto;
+  padding: 5px 20px;
+  opacity: 0;
+  background: rgba(255, 255, 255, 1);
+  transform: rotateX(-90deg);
+  transform-origin: 100% 0;
+  transition: transform 0.3s;
+}
+
+.list > .radio-1:checked ~ ul > .radio-1,
+.list > .radio-2:checked ~ ul > .radio-2,
+.list > .radio-3:checked ~ ul > .radio-3,
+.list > .radio-4:checked ~ ul > .radio-4 {
+  position: relative;
+  visibility: visible;
+  z-index: 1;
+  opacity: 1;
+  transform: rotateX(0);
+}

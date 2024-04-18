@@ -1,0 +1,121 @@
+@import url("./fonts.css");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "OpenSans";
+  background: #03a9f4;
+}
+
+.title {
+  position: absolute;
+  top: 30%;
+  right: 10%;
+  line-height: 70px;
+  color: white;
+  user-select: none;
+}
+h1 {
+  font-size: 50px;
+  text-align: right;
+}
+div.inspired {
+  width: 400px;
+  font-size: 30px;
+  font-weight: 300;
+  display: inline;
+}
+
+span {
+  text-align: right;
+  font-weight: 300;
+  font-size: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+li,
+a {
+  color: #03a9f4;
+  margin: 75px 0 -55px 0;
+  font-weight: 700;
+  line-height: 1.8;
+  text-decoration: none;
+  text-transform: none;
+  list-style: none;
+  outline: 0;
+  display: none;
+}
+
+#menu {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  width: 110px;
+  height: 110px;
+  background-color: white;
+  border-bottom-right-radius: 100%;
+  transition: 0.2s;
+}
+
+li {
+  width: 230px;
+  text-indent: 60px;
+}
+
+a:focus {
+  display: block;
+  color: rgb(73, 72, 72);
+  background-color: #eee;
+  transition: all 0.5s;
+}
+
+.title {
+  position: absolute;
+  color: white;
+  top: 35%;
+  right: 10%;
+  text-align: right;
+}
+
+#list,
+#back {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  width: 30px;
+  height: 5px;
+  cursor: pointer;
+  z-index: 1;
+  font-size: 30px;
+  color: #03a9f4;
+  transition: 0.2s;
+}
+
+#back {
+  opacity: 0;
+}
+
+#select:checked ~ #list {
+  opacity: 0;
+}
+
+#select:checked ~ #back {
+  opacity: 1;
+  transform: rotateY(360deg);
+  transition: transform 0.2s ease;
+}
+
+#select:checked + #list ~ #menu > li,
+a {
+  display: block;
+}
+
+#select:checked + #list + #back + #menu {
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+}
