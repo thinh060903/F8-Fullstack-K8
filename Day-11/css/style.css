@@ -1,0 +1,984 @@
+@import url("./fonts.css");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+html {
+  padding: 0;
+  margin: 0 auto;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  color: #4d4d4d;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+.navbar {
+  max-width: 1310px;
+  margin: 0 auto;
+}
+
+.header {
+  padding: 45px 0;
+}
+
+.header .navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .container .logo {
+  width: 255px;
+}
+
+.header .container .menu {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header .container .menu ul {
+  display: flex;
+}
+
+.header .container .menu ul li a {
+  display: block;
+  padding: 0 20px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.header .container .menu ul li:first-child > a {
+  color: #f55253;
+}
+
+.header .container .menu ul li a:hover {
+  color: #f55253;
+  transition: 0.2s;
+}
+
+.header .container .search .nav-search {
+  position: relative;
+}
+
+.header .container .search .nav-search .search-icon {
+  position: absolute;
+  top: 12px;
+  left: 18px;
+  color: #5c5c5c;
+}
+
+.header .container .search .nav-search input {
+  width: 288px;
+  background: white;
+  box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.04);
+  border-radius: 8px;
+  padding: 12px 66px 12px 44px;
+  border: none;
+  font-size: 16px;
+}
+
+.header .container .search .nav-search .placeholder {
+  position: absolute;
+  top: 12px;
+  left: 45px;
+  opacity: 1;
+  user-select: none;
+  cursor: text;
+  background: none;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+}
+
+.header .container .search .nav-search input:valid + span.placeholder,
+.header .container .search .nav-search input:focus + span.placeholder {
+  opacity: 0;
+}
+
+.header .container .search .nav-search .cart-icon {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+
+.header .container .search .nav-search .cart-icon::before {
+  position: absolute;
+  content: "";
+  background: #f2f2f2;
+  height: 27px;
+  width: 2px;
+  left: -16px;
+  top: -3px;
+}
+
+.header-grover {
+  max-width: 1310px;
+  height: auto;
+  margin: 0 auto;
+  padding: 80px 0;
+  display: flex;
+}
+
+.header .header-grover .container .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header-grover .container .content {
+  background: #fdecec;
+  border-radius: 23px;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  margin: 0 0 20px 0;
+}
+
+.header-grover .container .content h3 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  color: #f55556;
+}
+
+.header-grover .container .content span {
+  margin: 0 8px;
+}
+
+.header-grover .container .title h1 {
+  font-weight: 700;
+  font-size: 88px;
+  line-height: 88px;
+  letter-spacing: -0.01em;
+  color: #2e2e2e;
+}
+
+.header-grover .container .title h1 > span {
+  font-weight: 500;
+  font-size: 74px;
+  line-height: 88px;
+  letter-spacing: -0.05em;
+  color: #f54748;
+}
+
+.header-grover .container .title p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #2e2e2e;
+  max-width: 65%;
+  margin: 22px 0;
+}
+
+.header-grover .container .btn .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header-grover .container .btn .row .header-grover-btn:first-child > a {
+  background: #f86061;
+  border-radius: 12px;
+  width: 186px;
+  padding: 25px 20px;
+  font-weight: 500;
+  font-size: 20px;
+  text-align: center;
+  color: white;
+  display: block;
+  border: 1px solid transparent;
+  transition: all 0.3s;
+  margin-right: 30px;
+}
+
+.header-grover .container .btn .row {
+  margin: 25px 0 10px 0;
+}
+
+.header-grover .container .btn .row .header-grover-btn:first-child > a:hover {
+  border: 1px solid #f86061;
+  color: #f86061;
+  background: white;
+}
+
+.header-grover .container .btn .row .header-grover-btn:last-child button {
+  display: flex;
+  width: 216px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: capitalize;
+  letter-spacing: -0.01em;
+  align-items: center;
+  color: #2e2e2e;
+  justify-content: space-between;
+  background: none;
+  border: none;
+  transition: 0.2s all ease;
+  cursor: pointer;
+}
+
+.header-grover .container .btn .row .header-grover-btn:last-child button:hover {
+  color: #676767;
+}
+
+.header-grover .container .btn .row .header-grover-btn:last-child span {
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.04);
+  border-radius: 50%;
+}
+
+.header-grover .header-grover-grocery-content-img img {
+  width: 100%;
+  display: block;
+}
+
+.service-grover-grocery-wrapper {
+  padding: 100px 0;
+  background: #fef5f5;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.service-grover-grocery-wrapper .container {
+  /* width: 1310px; */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.service-grover-grocery-wrapper .service-grover-grocery-content-wrap .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.service-grover-grocery-wrapper
+  .container
+  .row
+  .service-grover-grocery-heading {
+  text-align: center;
+}
+
+.service-grover-grocery-wrapper
+  .container
+  .row
+  .service-grover-grocery-heading
+  h5 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #f54748;
+  margin: 0 0 8px 0;
+}
+
+.service-grover-grocery-wrapper
+  .container
+  .row
+  .service-grover-grocery-heading
+  h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 54px;
+  text-transform: capitalize;
+  color: #2e2e2e;
+  max-width: 40%;
+  margin: 0 auto;
+}
+
+.service-grover-grocery-wrapper
+  .container
+  .service-grover-grocery-content-wrap {
+  margin: 60px 0 20px 0;
+}
+
+.service-grover-grocery-wrapper
+  .container
+  .service-grover-grocery-content-wrap
+  .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.service-grover-grocery-wrapper
+  .container
+  .service-grover-grocery-content-wrap
+  .row
+  .service-grover-grocery-content-inner {
+  position: relative;
+}
+
+.service-grover-grocery-wrapper
+  .container
+  .service-grover-grocery-content-wrap
+  .row
+  .service-grover-grocery-content-inner
+  .service-grover-grocery-content-bg {
+  position: absolute;
+  height: 330px;
+  width: 280px;
+  background: #fe6a6a;
+  border-radius: 12px;
+  left: 40px;
+  top: 41px;
+  z-index: 0;
+  transform: rotate(0deg);
+  opacity: 0;
+  transition: 0.2s all ease;
+  transform-origin: top left;
+  padding: 50px 28px;
+}
+
+.service-grover-grocery-wrapper
+  .container
+  .service-grover-grocery-content-wrap
+  .row
+  .service-grover-grocery-content-inner:hover
+  .service-grover-grocery-content-bg {
+  opacity: 1;
+  left: 40px;
+  top: 41px;
+  transform: rotate(-3deg);
+}
+
+.service-grover-grocery-wrapper
+  .container
+  .service-grover-grocery-content-wrap
+  .row
+  .service-grover-grocery-content-inner
+  .service-grover-grocery-content {
+  margin: 40px;
+  background-color: white;
+  border-radius: 12px;
+  padding: 50px 28px;
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  height: 330px;
+  width: 280px;
+}
+
+.service-grover-grocery-wrapper
+  .container
+  .service-grover-grocery-content-wrap
+  .row
+  .service-grover-grocery-content-inner
+  .service-grover-grocery-content
+  .service-grover-grocery-content-txt {
+  text-align: center;
+  margin: 60px 0 10px 0;
+}
+.service-grover-grocery-wrapper
+  .container
+  .service-grover-grocery-content-wrap
+  .row
+  .service-grover-grocery-content-inner
+  .service-grover-grocery-content
+  .service-grover-grocery-content-txt
+  h3 {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 33px;
+  letter-spacing: -0.01em;
+  color: #2e2e2e;
+  margin: 0 0 15px 0;
+}
+.service-grover-grocery-wrapper
+  .container
+  .service-grover-grocery-content-wrap
+  .row
+  .service-grover-grocery-content-inner
+  .service-grover-grocery-content
+  .service-grover-grocery-content-txt
+  p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 25px;
+  color: #676767;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.feature-grover-grocery-wrapper {
+  padding: 50px 0;
+}
+
+.feature-grover-grocery-wrapper .container .row {
+  display: flex;
+  margin: 0 auto;
+  width: 1320px;
+}
+
+.feature-grover-grocery-wrapper
+  .container
+  .row
+  .feature-grover-grocery-content {
+  margin: 180px 0 20px 0;
+}
+
+.feature-grover-grocery-wrapper
+  .container
+  .row
+  .feature-grover-grocery-content-img {
+  width: 90%;
+}
+
+.feature-grover-grocery-wrapper
+  .container
+  .row
+  .feature-grover-grocery-content {
+  position: relative;
+}
+
+.feature-grover-grocery-wrapper
+  .container
+  .row
+  .feature-grover-grocery-content
+  .feature-grover-grocery-content-txt
+  .feature-grover-grocery-content-title {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+  color: #03a66b;
+  text-transform: uppercase;
+  margin: 0 0 8px 0;
+}
+
+.feature-grover-grocery-wrapper
+  .container
+  .row
+  .feature-grover-grocery-content
+  .feature-grover-grocery-content-txt
+  .feature-grover-grocery-content-title2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 54px;
+  text-transform: capitalize;
+  color: #2e2e2e;
+  max-width: 75%;
+  margin: 0 0 22px 0;
+}
+
+.feature-grover-grocery-wrapper
+  .container
+  .row
+  .feature-grover-grocery-content
+  .feature-grover-grocery-content-txt
+  p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #676767;
+  max-width: 70%;
+}
+
+.feature-grover-grocery-wrapper
+  .container
+  .row
+  .feature-grover-grocery-content
+  .feature-grover-grocery-content-btn {
+  margin: 50px 0 20px 0;
+}
+
+.feature-grover-grocery-wrapper
+  .container
+  .row
+  .feature-grover-grocery-content
+  .feature-grover-grocery-content-btn
+  a {
+  display: block;
+  background: #f86061;
+  border-radius: 12px;
+  width: 200px;
+  padding: 24px 20px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  border: 1px solid transparent;
+  color: white;
+  transition: all 0.3s;
+}
+
+.feature-grover-grocery-wrapper
+  .container
+  .row
+  .feature-grover-grocery-content
+  .feature-grover-grocery-content-btn
+  a:hover {
+  background: white;
+  color: #f86061;
+  border: 1px solid #f86061;
+}
+
+.feature-2-grover-grocery-wrapper {
+  padding: 50px 0;
+}
+
+.feature-2-grover-grocery-wrapper .container .row {
+  display: flex;
+  margin: 0 auto;
+  width: 1320px;
+}
+
+.feature-2-grover-grocery-wrapper
+  .container
+  .row
+  .feature-2-grover-grocery-content {
+  margin: 200px 0 20px 0;
+}
+
+.feature-2-grover-grocery-wrapper
+  .container
+  .row
+  .feature-2-grover-grocery-content
+  .feature-2-grover-grocery-content-txt
+  h5 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: #f9ba45;
+  margin: 0 0 8px 0;
+}
+
+.feature-2-grover-grocery-wrapper
+  .container
+  .row
+  .feature-2-grover-grocery-content
+  .feature-2-grover-grocery-content-txt
+  h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 54px;
+  text-transform: capitalize;
+  color: #2e2e2e;
+  max-width: 90%;
+  margin: 0 0 22px 0;
+}
+
+.feature-2-grover-grocery-wrapper
+  .container
+  .row
+  .feature-2-grover-grocery-content
+  .feature-2-grover-grocery-content-txt
+  p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #676767;
+  max-width: 80%;
+}
+
+.feature-2-grover-grocery-wrapper
+  .container
+  .row
+  .feature-2-grover-grocery-content
+  .feature-2-grover-grocery-content-btn {
+  margin: 50px 0 20px 0;
+}
+
+.feature-2-grover-grocery-wrapper
+  .container
+  .row
+  .feature-2-grover-grocery-content
+  .feature-2-grover-grocery-content-btn
+  a {
+  display: block;
+  background: #f86061;
+  border-radius: 12px;
+  width: 200px;
+  padding: 24px 20px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  border: 1px solid transparent;
+  color: white;
+  transition: all 0.3s;
+}
+
+.feature-2-grover-grocery-wrapper
+  .container
+  .row
+  .feature-2-grover-grocery-content
+  .feature-2-grover-grocery-content-btn
+  a:hover {
+  background: white;
+  color: #f86061;
+  border: 1px solid #f86061;
+}
+
+.cta-grover-grocery-wrapper {
+  padding: 100px 0;
+  background: #fef5f5;
+}
+
+.cta-grover-grocery-wrapper .container > .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 1310px;
+}
+
+.cta-grover-grocery-wrapper .container .row .cta-grover-grocery-content-img {
+  flex: 0 0 auto;
+  width: 50%;
+  width: auto;
+  margin: 0 auto;
+}
+
+.cta-grover-grocery-wrapper .container .row .cta-grover-grocery-right {
+  flex: 0 0 auto;
+  width: 50%;
+}
+
+.cta-grover-grocery-wrapper .container .row .cta-grover-grocery-content {
+  margin: 80px 10px 20px 10px;
+}
+
+.cta-grover-grocery-wrapper
+  .container
+  .row
+  .cta-grover-grocery-content
+  .cta-grover-grocery-content-txt
+  .cta-grover-grocery-content-title {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+  color: #f54748;
+  margin: 0 0 8px 0;
+}
+
+.cta-grover-grocery-wrapper
+  .container
+  .row
+  .cta-grover-grocery-content
+  .cta-grover-grocery-content-txt
+  .cta-grover-grocery-content-title2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 54px;
+  text-transform: capitalize;
+  color: #2e2e2e;
+  max-width: 80%;
+  margin: 0 0 22px 0;
+}
+
+.cta-grover-grocery-wrapper
+  .container
+  .row
+  .cta-grover-grocery-content
+  .cta-grover-grocery-content-txt
+  p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  max-width: 80%;
+  color: #676767;
+}
+
+.cta-grover-grocery-wrapper .container .row .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cta-grover-grocery-wrapper
+  .container
+  .row
+  .row
+  .cta-grover-grocery-content-btn {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin: 60px 0 20px 0;
+  gap: 15px;
+}
+
+.cta-grover-grocery-wrapper
+  .container
+  .row
+  .row
+  .cta-grover-grocery-content-btn
+  .app-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 200px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  color: #2e2e2e;
+  padding: 18px 2px;
+  border: 1px solid #eedcdc;
+  border-radius: 12px;
+}
+
+.cta-grover-grocery-wrapper
+  .container
+  .row
+  .row
+  .cta-grover-grocery-content-btn
+  .playstore-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 200px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  color: #2e2e2e;
+  padding: 18px 2px;
+  border: 1px solid #eedcdc;
+  border-radius: 12px;
+}
+
+.footer-grover-grocery-wrapper {
+  padding: 50px 0 0 0;
+}
+
+.footer-grover-grocery-wrapper .container {
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+.footer-grover-grocery-wrapper .container .footer-grover-grocery-top {
+  padding: 30px 0;
+}
+
+.footer-grover-grocery-wrapper .container .footer-grover-grocery-top .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-grover-grocery-wrapper
+  .container
+  .footer-grover-grocery-top
+  .row
+  .footer-grover-grocery-top-left {
+  flex: 0 0 auto;
+  width: 33.3333333333%;
+}
+
+.footer-grover-grocery-wrapper
+  .container
+  .footer-grover-grocery-top
+  .row
+  .footer-grover-grocery-top-left
+  .footer-grover-grocery-logo-wrap {
+  margin: 20px 0;
+}
+
+.footer-grover-grocery-wrapper
+  .container
+  .footer-grover-grocery-top
+  .row
+  .footer-grover-grocery-top-left
+  .footer-grover-grocery-logo-wrap
+  .footer-grover-grocery-logo
+  img {
+  width: auto;
+}
+
+.footer-grover-grocery-wrapper
+  .container
+  .footer-grover-grocery-top
+  .row
+  .footer-grover-grocery-top-left
+  .footer-grover-grocery-logo-wrap
+  .footer-grover-grocery-content-logo
+  p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #676767;
+  max-width: 75%;
+  margin: 25px 0 10px 0;
+}
+
+.footer-grover-grocery-wrapper
+  .container
+  .footer-grover-grocery-top
+  .row
+  .footer-grover-grocery-top-right {
+  flex: 0 0 auto;
+  width: 66.6666666667%;
+}
+
+.footer-grover-grocery-wrapper
+  .container
+  .footer-grover-grocery-top
+  .row
+  .footer-grover-grocery-top-left
+  .footer-grover-grocery-content-wrap
+  .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-grover-grocery-wrapper
+  .container
+  .footer-grover-grocery-top
+  .row
+  .footer-grover-grocery-top-right
+  .footer-grover-grocery-content-wrap
+  .row
+  .footer-grover-grocery-content {
+  flex: 0 0 auto;
+  width: 33.3333333333%;
+  margin: 30px 0 10px 0;
+}
+
+.footer-grover-grocery-wrapper
+  .container
+  .footer-grover-grocery-top
+  .row
+  .footer-grover-grocery-top-right
+  .footer-grover-grocery-content-wrap
+  .row
+  .footer-grover-grocery-content
+  .footer-grover-grocery-content-title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: -0.01em;
+  color: #2e2e2e;
+}
+
+.footer-grover-grocery-wrapper
+  .container
+  .footer-grover-grocery-top
+  .row
+  .footer-grover-grocery-top-right
+  .footer-grover-grocery-content-wrap
+  .row
+  .footer-grover-grocery-content
+  .footer-grover-grocery-content-list {
+  margin: 30px 0 10px 0;
+}
+
+.footer-grover-grocery-wrapper
+  .container
+  .footer-grover-grocery-top
+  .row
+  .footer-grover-grocery-top-right
+  .footer-grover-grocery-content-wrap
+  .row
+  .footer-grover-grocery-content
+  .footer-grover-grocery-content-list
+  ul
+  li
+  a {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 40px;
+  color: #676767;
+}
+
+.footer-grover-grocery-wrapper
+  .container
+  .footer-grover-grocery-top
+  .row
+  .footer-grover-grocery-top-right
+  .footer-grover-grocery-content-wrap
+  .row
+  .footer-grover-grocery-content
+  > .footer-grover-grocery-content {
+  margin: 30px 0 10px 0;
+}
+
+.footer-grover-grocery-wrapper
+  .container
+  .footer-grover-grocery-top
+  .row
+  .footer-grover-grocery-top-right
+  .footer-grover-grocery-content-wrap
+  .row
+  .footer-grover-grocery-content
+  > .footer-grover-grocery-content
+  p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #888888;
+}
+
+.footer-grover-grocery-wrapper .container .footer-grover-grocery-bottom {
+  padding: 0 0 30px 0;
+}
+
+.footer-grover-grocery-wrapper .container .footer-grover-grocery-bottom .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-grover-grocery-wrapper
+  .container
+  .footer-grover-grocery-bottom
+  .row
+  .footer-grover-grocery-copyright {
+  flex: 0 0 auto;
+  width: 50%;
+}
+
+.footer-grover-grocery-wrapper
+  .container
+  .footer-grover-grocery-bottom
+  .row
+  .footer-grover-grocery-copyright
+  p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #8c8c8c;
+}
+
+.footer-grover-grocery-wrapper
+  .container
+  .footer-grover-grocery-bottom
+  .row
+  .footer-grover-grocery-condition {
+  flex: 0 0 auto;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.footer-grover-grocery-wrapper
+  .container
+  .footer-grover-grocery-bottom
+  .row
+  .footer-grover-grocery-condition
+  p
+  a {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: #747474;
+  margin: 0 10px;
+  display: block;
+}
