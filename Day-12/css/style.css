@@ -155,6 +155,18 @@ label.radio-2 > .tab-switch-button {
   font-family: var(--secondary-font-family);
 }
 
+.form.radio-1 .form-box > img {
+  width: 140px;
+  margin-top: -200px;
+  margin-left: -120px;
+}
+
+.form.radio-2 .form-box > img {
+  width: 140px;
+  margin-top: -200px;
+  margin-left: -120px;
+}
+
 .form .form-box form {
   margin-top: 70px;
 }
@@ -480,6 +492,20 @@ input[type="radio"] {
     width: 100%;
     margin-top: 80px;
     position: static;
+  }
+
+  .form.radio-1 > img {
+    width: 120px;
+    /* position: static;
+    top: -40px;
+    left: 350px; */
+  }
+
+  .form.radio-2 > img {
+    width: 120px;
+    position: absolute;
+    top: -35px;
+    left: -30px;
   }
 
   label.radio-1 > .tab-switch-button {
