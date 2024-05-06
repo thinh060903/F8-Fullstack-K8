@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vikinger | Home</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/fontawesome-free-6.5.2-web/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="container-background-right"></div>
+        <div class="info">
+            <div class="logo">
+                <img src="./images/logo.webp" alt="">
+            </div>
+            <h2>WELCOME TO</h2>
+            <h1>VIKINGER</h1>
+            <p>The next generation social network & community! Connect with your friends and play with our quests and badges gamification system!</p>
+            
+        </div>
+        <!-- <div class="tab-switch"> -->
+          <input type="radio" name="list" class="radio-1" id="radio-1" checked hidden>
+          <label class="radio-1" for="radio-1"><p class="tab-switch-button">Login</p></label>
+          <input type="radio" name="list" class="radio-2" id="radio-2" hidden>
+          <label class="radio-2" for="radio-2"><p class="tab-switch-button">Register</p></label>
+      
+          <div class="form radio-1">
+            <div class="form-box login-form">
+              <img class="overflowing" src="./images/rocket.webp" alt="rocket">
+                <h2 class="title">Account Login</h2>
+                <form>
+                  <div class="form-row">
+                    <div class="form-item">
+                      <div class="form-input">
+                        <input type="text" id="login-username" name="email" required spellcheck="false">
+                        <span class="placeholder">Username or Email</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-item">
+                      <div class="form-input">
+                        <input type="password" id="login-password" name="password" required spellcheck="false">
+                        <span class="placeholder">Password</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-check space-between">
+                    <div class="form-item">
+                      <div class="checkbox-wrap">
+                        <input type="checkbox" id="login-remember" name="login_remember" checked>
+                        <div class="checkbox-box">&times;</div>
+                        <label for="login-remember">Remember Me</label>
+                      </div>
+                    </div>
+                    <div class="form-item">
+                      <a class="form-link" href="#!">Forgot Password?</a>
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-item">
+                      <button class="button medium secondary">Login to your Account!</button>
+                    </div>
+                  </div>
+                </form>
+                <p class="lined-text">Login with your Social Account</p>
+                <div class="social-links">
+                  <ul>
+                    <li><a class="social-link facebook" href="#!">
+                      <i class="fa-brands fa-facebook"></i>
+                    </a></li>
+                    <li><a class="social-link twitter" href="#!">
+                      <i class="fa-brands fa-twitter"></i>
+                    </a></li>
+                    <li><a class="social-link twitch" href="#!">
+                      <i class="fa-brands fa-twitch"></i>
+                    </a></li>
+                    <li><a class="social-link youtube" href="#!">
+                      <i class="fa-brands fa-youtube"></i>
+                    </a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          <div class="form radio-2">
+            <div class="form-box create-form">
+              <img class="overflowing" src="./images/rocket.webp" alt="rocket">
+              <h2 class="title">Create your Account!</h2>
+                <form>
+                  <div class="form-row">
+                    <div class="form-item">
+                      <div class="form-input">
+                        <input type="text" id="login-username" name="email" required spellcheck="false">
+                        <span class="placeholder">Your Email</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-item">
+                      <div class="form-input">
+                        <input type="text" id="login-username" name="name" required spellcheck="false">
+                        <span class="placeholder">Username</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-item">
+                      <div class="form-input">
+                        <input type="password" id="login-password" name="password" required spellcheck="false">
+                        <span class="placeholder">Password</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-item">
+                      <div class="form-input">
+                        <input type="password" id="login-password" name="password" required spellcheck="false">
+                        <span class="placeholder">Repeat Password</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-check space-between">
+                    <div class="form-item">
+                      <div class="checkbox-wrap">
+                        <input type="checkbox" id="register-newsletter" name="register_newsletter" checked>
+                        <div class="checkbox-box">&times;</div>
+                        <label for="register-newsletter">Send me news and updates via email</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-item">
+                      <button class="button medium primary" type="submit">Register Now!</button>
+                    </div>
+                  </div>
+                </form>
+                <p class="form-text">You'll receive a confirmation email in your inbox with a link to activate your account. If you have any problems, <a href="#">contact us</a>!</p>
+            </div>
+          </div>
+      <!-- </div> -->
+    </div>
+</body>
+</html>
