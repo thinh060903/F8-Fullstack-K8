@@ -72,3 +72,7 @@
 <a href="./Day-12/index.html">Bài tập</a>
 
 ## Buổi 13
+
+<a href="./Day-13/index.html">Bài tập</a>
+
+## Buổi 14
