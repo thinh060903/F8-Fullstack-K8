@@ -1,0 +1,147 @@
+$sidebar-width: 250px;
+$background-color: #f9f9f9;
+$text-color: #333;
+$link-hover-color: #ddd;
+$help-center-background: #f1f1f1;
+$font-family: "Roboto";
+
+header {
+    display: flex;
+    max-width: 80%;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px 20px;
+    background-color: #fff;
+    font-family: $font-family;
+    font-weight: 600;
+    transform: translateX(20%);
+    transform-origin: 50% 50%;
+    position: relative;
+    z-index: 1000; // Đảm bảo navbar ở trên cùng
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); // Tạo độ phân cách và độ sâu
+
+    .search-bar {
+        flex: 1;
+        input[type="search"] {
+            width: 100%;
+            padding: 8px;
+            font-size: 16px;
+            border: 2px solid #ccc; // Thêm viền cho hộp tìm kiếm
+            border-radius: 4px; // Bo tròn góc
+        }
+    }
+
+    .main-navigation {
+        display: flex;
+        justify-content: flex-end;
+        flex-grow: 1;
+
+        a {
+            text-decoration: none;
+            color: black;
+            padding: 10px 20px;
+            font-size: 16px;
+
+            &.active {
+                border-bottom: 3px solid black;
+            }
+
+            &:hover {
+                color: gray;
+            }
+        }
+    }
+
+    .user-interactions {
+        display: flex;
+        justify-content: space-around;
+        width: 100px;
+
+        a {
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+        }
+    }
+}
+
+.sidebar {
+    width: $sidebar-width;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background-color: $background-color;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    font-family: $font-family;
+
+    .logo {
+        text-align: center;
+        margin-bottom: 25px;
+        img {
+            max-width: 45%;
+            height: auto;
+        }
+    }
+
+    nav {
+        position: absolute;
+        left: 30%;
+        text-align: left;
+        h2{
+            margin: 20px 0;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            
+            li {
+                a {
+                    text-decoration: none;
+                    color: $text-color;
+                    display: flex;
+                    align-items: center;
+                    padding: 12px 0px;
+                    transition: background-color 0.3s;
+                    font-weight: 600;
+                    img {
+                        max-width: 25px;
+                        height: auto;
+                        margin-right: 10px;
+                    }
+                    &:hover {
+                        background-color: $link-hover-color;
+                    }
+                }
+            }
+        }
+    }
+
+    .help-center {
+        position: absolute;
+        bottom: 25px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: auto;
+        text-align: center;
+        
+        a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            color: $text-color;
+            font-size: 15px;
+            white-space: nowrap;
+            font-weight: 600;
+            i {
+                background-color: $help-center-background;
+                border-radius: 50%; 
+                padding: 20px;
+                margin-right: 15px;
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+// Partials
+@import "partials/variables";
+@import "partials/reset";
+@import "partials/mixin";
+@import "partials/base";
+
+// Components
+@import "components/breadcrums";
+@import "components/card_item";
+
+// Layout
+@import "layouts/header";
+@import "layouts/footer";
+
+// Pages
+@import "pages/home";
+@import "pages/about";
+@import "pages/product";
