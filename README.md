@@ -78,3 +78,7 @@
 ## Buổi 16
 
 <a href="./Du-an-HTML-CSS-buoi-15/index.html">Bài tập</a>
+
+## Buổi 17
+
+<a href="./Day-17/index.html">Bài tập</a>
