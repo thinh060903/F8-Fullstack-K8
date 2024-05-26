@@ -82,3 +82,7 @@
 ## Buổi 17
 
 <a href="./Day-17/index.html">Bài tập</a>
+
+## Buổi 18
+
+<a href="./Day-18/index.html">Bài tập</a>
