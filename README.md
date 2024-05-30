@@ -86,3 +86,9 @@
 ## Buổi 18
 
 <a href="./Day-18/index.html">Bài tập</a>
+
+## Buổi 19
+
+<a href="./Day-19/index.html">Bài tập</a>
+
+## Buổi 20

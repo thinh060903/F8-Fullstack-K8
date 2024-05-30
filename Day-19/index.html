@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập về nhà buổi 19</title>
+    <link rel="stylesheet" href="./css/grid.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Bài tập về nhà buổi 19</h1>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="content">
+                <div class=".col-12 .col-md-6 .col-xl-4">
+                    <h2>Bài 1: N số fibonaci</h2>
+                    <label for="fibonacci-input">Nhập N số fibonaci đầu tiên:</label>
+                    <input type="number" id="fibonacci-input" min="0" step="1">
+                    <button onclick="generateFibonacci()">Tìm số</button>
+                    <div class="calculator">
+                        <label>Dãy số Fibonaci là: </label><label id="fibonacci-sequence"></label>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="content">
+                <div class=".col-12 .col-md-6 .col-xl-4">
+                    <h2>Bài 2: Đảo ngược số</h2>
+                    <label for="reverse-input">Nhập số cần đảo ngược:</label>
+                    <input type="text" id="reverse-input">
+                    <button onclick="reverseNumber()">Đảo ngược</button>
+                    <div class="calculator">
+                        <label>Số đảo ngược là: </label><label id="reverseNumber"></label>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <div class=".col-12 .col-md-6 .col-xl-4">
+                    <h2>Bài 3: Viết hàm chuyển số thành chữ</h2>
+                    <label for="number-input">Nhập số cần chuyển thành chữ:</label>
+                    <input type="number" id="number-input" min="0" max="9999">
+                    <button onclick="convertNumberToWords()">Chuyển Đổi</button>
+                    <div class="calculator">
+                        <label>Số thành chữ: </label><label id="numberToWords"></label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/ex01.js"></script>
+</body>
+</html>
