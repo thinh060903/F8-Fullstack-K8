@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập về nhà buổi 21</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Bài tập về nhà buổi 21</h1>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="content">
+                <div class=".col-12 .col-md-6 .col-xl-4">
+                    <h2>Bài 1: Tìm số lớn nhất và nhỏ nhất trong mảng</h2>
+                    <label for="arrayInputMinMax">Nhập mảng số nguyên (cách nhau bởi dấu phẩy):</label>
+                    <input type="text" id="arrayInputMinMax" placeholder="Ví dụ: 1,2,3,4,5">
+                    <button onclick="findMinMax()">Tìm</button>
+                    <div class="calculator">
+                        <label>Kết quả: </label><label id="resultMinMax"></label>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <div class=".col-12 .col-md-6 .col-xl-4">
+                    <h2>Bài 2: Tính trung bình các số nguyên tố trong mảng</h2>
+                    <label for="arrayInputPrime">Nhập mảng số nguyên (cách nhau bởi dấu phẩy):</label>
+                    <input type="text" id="arrayInputPrime" placeholder="Ví dụ: 1,2,3,4,5">
+                    <button onclick="calculatePrimeAverage()">Tính</button>
+                    <div class="calculator">
+                        <label>Kết quả: </label><label id="resultPrimeAverage"></label>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <div class=".col-12 .col-md-6 .col-xl-4">
+                    <h2>Bài 3: Lọc trùng lặp trong mảng</h2>
+                    <label for="arrayInputFilter">Nhập mảng (cách nhau bởi dấu phẩy):</label>
+                    <input type="text" id="arrayInputFilter" placeholder="Ví dụ: 1,2,2,3,4,4,5">
+                    <button onclick="filterDuplicates()">Lọc trùng</button>
+                    <div class="calculator">
+                        <label>Kết quả: </label><label id="resultFilterDuplicates"></label>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <div class=".col-12 .col-md-6 .col-xl-4">
+                    <h2>Bài 4: Sắp xếp và chèn phần tử vào mảng</h2>
+                    <label for="arrayInputInsert">Nhập mảng số nguyên (cách nhau bởi dấu phẩy):</label>
+                    <input type="text" id="arrayInputInsert" placeholder="Ví dụ: 5,1,9,8,10">
+                    <br>
+                    <label for="elementInput">Nhập số cần chèn:</label>
+                    <input type="text" id="elementInput" placeholder="Ví dụ: 4">
+                    <br>
+                    <button onclick="sortAndInsert()">Thực hiện</button>
+
+                    <div class="calculator">
+                        <label>Kết quả: </label><label id="resultInsert"></label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>

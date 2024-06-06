@@ -94,3 +94,7 @@
 ## Buổi 20
 
 <a href="./Day-20/index.html">Bài tập</a>
+
+## Buổi 21
+
+<a href="./Day-21/index.html">Bài tập</a>
