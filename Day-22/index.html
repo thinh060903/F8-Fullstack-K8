@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập về nhà buổi 22</title>
+    <style>
+        .article {
+            display: flex;
+            align-items: flex-start;
+            border-bottom: 1px solid #ccc;
+            padding: 10px 0;
+        }
+        .article img {
+            width: 200px;
+            height: auto;
+            object-fit: cover;
+        }
+        .article-content {
+            flex: 1;
+            padding: 0 20px;
+        }
+        .article h2 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .article p {
+            margin: 10px 0 0 0;
+        }
+        .reverse {
+            flex-direction: row-reverse;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Bài tập về nhà buổi 22</h1>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="content">
+                <div class=".col-12 .col-md-6 .col-xl-4">
+                    <h2>Bài 1: Lấy kết quả giao giữa 2 mảng</h2>
+                    <label for="arrayAInput">Nhập mảng A (cách nhau bởi dấu phẩy):</label>
+                    <input type="text" id="arrayAInput" placeholder="Ví dụ: 1,2,3,4,5">
+                    <br>
+                    <label for="arrayBInput">Nhập mảng B (cách nhau bởi dấu phẩy):</label>
+                    <input type="text" id="arrayBInput" placeholder="Ví dụ: 1,2,3,4,5">
+                    <button onclick="findInterSection()">Tìm</button>
+                    <div class="calculator">
+                        <label>Phần tử chung: </label><label id="resultInterSection"></label>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <div class=".col-12 .col-md-6 .col-xl-4">
+                    <h2>Bài 2: Làm phẳng mảng</h2>
+                    <label for="">Làm phẳng mảng sau: var arr = [0, 1, [2, 3], [4, 5, [6, 7]], [8, [9, 10, [11, 12]]]]</label>
+                    <button onclick="flattenArray()">Làm phẳng mảng</button>
+                    <div class="calculator">
+                        <label>Mảng sau khi làm phẳng: </label><label id="resultFlattenArray"></label>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <div class=".col-12 .col-md-6 .col-xl-4">
+                    <h2>Bài 3: Tách phần tử trong mảng theo đúng kiểu dữ liệu</h2>
+                    <label for="">Tách mảng: var arr = [["a", 1, true], ["b", 2, false]]</label>
+                    <button onclick="separateArrayByType()">Tách mảng</button>
+                    <div class="calculator">
+                        <label>Kết quả: </label><label id="resultArrayByType"></label>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <div class=".col-12 .col-md-6 .col-xl-4">
+                    <h2>Bài 4</h2>
+                    <div id="articles-container"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>
