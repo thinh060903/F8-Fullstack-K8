@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập về nhà buổi 23</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Bài tập về nhà buổi 23</h1>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="content">
+                <div class=".col-12 .col-md-6 .col-xl-4">
+                    <h2>Bài 1: Cho một số nguyên n, trả về số nguyên tố đối xứng nhỏ nhất lớn hơn hoặc bằng n</h2>
+                    <input type="number" id="inputNumber" placeholder="Nhập một số">
+                    <button onclick="findPalindromePrime()">Tìm số nguyên tố đối xứng</button>
+                    <br>
+                    <div class="calculator">
+                        <label id="resultPalindromePrime"></label>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <div class=".col-12 .col-md-6 .col-xl-4">
+                    <h2>Bài 2: Tìm trung vị của hai mảng đã sắp xếp</h2>
+                    <div>
+                        <label for="array1">Nhập mảng 1 (cách nhau bằng dấu phẩy):</label>
+                        <input type="text" id="array1" placeholder="Ví dụ: 1,3,5">
+                    </div>
+                    <div>
+                        <label for="array2">Nhập mảng 2 (cách nhau bằng dấu phẩy):</label>
+                        <input type="text" id="array2" placeholder="Ví dụ: 2,4,6">
+                    </div>
+                    <button onclick="findMedian()">Tìm trung vị</button>
+                    <div class="calculator">
+                        <label id="resultMedian"></label>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <div class=".col-12 .col-md-6 .col-xl-4">
+                    <h2>Bài 3: Tìm số nguyên dương nhỏ nhất không có trong mảng</h2>
+                    <div>
+                        <label for="arrayInput">Nhập mảng (cách nhau bằng dấu phẩy):</label>
+                        <input type="text" id="arrayInput" placeholder="Ví dụ: 3,4,-1,1">
+                    </div>
+                    <button onclick="findSmallestMissingPositive()">Tìm</button>
+                    <div class="calculator">
+                        <label id="resultSmallestMissingPositive"></label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>

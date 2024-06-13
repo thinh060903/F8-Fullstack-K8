@@ -102,3 +102,7 @@
 ## Buổi 22
 
 <a href="./Day-22/index.html">Bài tập</a>
+
+## Buổi 23
+
+<a href="./Day-23/index.html">Bài tập</a>
