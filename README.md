@@ -106,3 +106,7 @@
 ## Buổi 23
 
 <a href="./Day-23/index.html">Bài tập</a>
+
+## Buổi 24
+
+<a href="./Day-24/index.html">Bài tập</a>
