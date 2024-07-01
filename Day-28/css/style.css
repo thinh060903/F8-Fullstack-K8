@@ -1,0 +1,90 @@
+@import url("./fonts.css");
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  align-items: center;
+  background: #8758ff;
+  display: flex;
+  justify-content: center;
+}
+
+.App {
+  text-align: center;
+}
+
+.TodoWrapper {
+  background: #1a1a40;
+  border-radius: 5px;
+  margin-top: 5rem;
+  padding: 2rem;
+}
+
+h1 {
+  color: #fff;
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.TodoForm {
+  width: 100%;
+}
+
+.todo-input {
+  background: none;
+  border: 1px solid #8758ff;
+  color: #fff;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+  outline: none;
+  padding: 0.5rem 1rem;
+  width: 300px;
+}
+
+.todo-btn {
+  background: #8758ff;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  padding: 0.55rem;
+}
+
+.todo-list {
+  margin-top: 2rem;
+}
+
+.todo-item {
+  background: #8758ff;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  position: relative;
+}
+
+.todo-item .todo-text {
+  flex-grow: 1;
+}
+
+.todo-item .button-group {
+  position: absolute;
+  right: 10px;
+}
+
+.todo-item .edit-btn,
+.todo-item .delete-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  margin-left: 0.5rem;
+}
+
+.todo-item .edit-btn:hover,
+.todo-item .delete-btn:hover {
+  color: #1a1a40;
+}

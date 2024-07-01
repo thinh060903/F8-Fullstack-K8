@@ -179,3 +179,4 @@ function buildOptions(categories, level = 0) {
 
 const selectElement = document.getElementById('categories-select');
 selectElement.innerHTML += buildOptions(categories);
+console.log(buildOptions(categories));
