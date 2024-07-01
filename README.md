@@ -118,3 +118,7 @@
 ## Buổi 26
 
 <a href="./Day-26/index.html">Bài tập</a>
+
+## Buổi 28
+
+<a href="./Day-28/index.html">Bài tập</a>
