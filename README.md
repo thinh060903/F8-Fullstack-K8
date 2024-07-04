@@ -122,3 +122,7 @@
 ## Buổi 28
 
 <a href="./Day-28/index.html">Bài tập</a>
+
+## Buổi 29
+
+<a href="./Day-29/index.html">Bài tập</a>
