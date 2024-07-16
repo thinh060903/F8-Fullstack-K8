@@ -134,3 +134,7 @@
 ## Buổi 31
 
 <a href="./Day-31/index.html">Bài tập</a>
+
+## Buổi 32
+
+<a href="./Day-32/index.html">Bài tập</a>
