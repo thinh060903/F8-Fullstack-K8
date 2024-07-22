@@ -138,3 +138,7 @@
 ## Buổi 32
 
 <a href="./Day-32/index.html">Bài tập</a>
+
+## Buổi 33
+
+<a href="./Day-33/index.html">Bài tập</a>
