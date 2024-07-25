@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Docs Editor</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <h2>Doc Editor</h2>
+      <hr />
+    </div>
+    <div class="editor-container">
+      <div class="toolbar">
+        <div class="file-menu">
+          <button id="fileButton">File</button>
+          <div class="dropdown-content" id="fileDropdown">
+            <a href="#" id="newFile">New</a>
+            <a href="#" id="saveTxt">Save as TXT</a>
+            <a href="#" id="savePdf">Save as PDF</a>
+          </div>
+        </div>
+        <input type="text" id="fileName" placeholder="untitled" />
+        <button id="boldButton">b</button>
+        <button id="underlineButton">u</button>
+        <button id="italicButton">i</button>
+        <input type="color" id="colorPicker" />
+      </div>
+      <div class="editor" id="editor" contenteditable="true"></div>
+      <div class="status-bar">
+        <span id="charCount">Số ký tự: 0</span>
+        <span id="wordCount">Số từ: 0</span>
+      </div>
+    </div>
+    <script src="./js/script.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+      integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </body>
+</html>
