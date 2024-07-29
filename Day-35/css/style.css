@@ -1,0 +1,41 @@
+body {
+  background-color: #03bdf0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+}
+
+.container h1 {
+  color: white;
+}
+
+.counter {
+  background: orange;
+  border-radius: 50%;
+  font-size: 50px;
+  color: white;
+  margin-bottom: 20px;
+  /* padding: 5px 0; */
+}
+
+button {
+  padding: 12px 20px;
+  font-size: 15px;
+  background-color: #ccc;
+  border: 1px solid white;
+  border-radius: 50px;
+  cursor: not-allowed;
+  color: #333;
+}
+
+button:enabled {
+  background-color: #03bdf0;
+  cursor: pointer;
+  color: white;
+}

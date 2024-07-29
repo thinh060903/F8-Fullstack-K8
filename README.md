@@ -146,3 +146,7 @@
 ## Buổi 34
 
 <a href="./Day-34/index.html">Bài tập</a>
+
+## Buổi 35
+
+<a href="./Day-35/index.html">Bài tập</a>
