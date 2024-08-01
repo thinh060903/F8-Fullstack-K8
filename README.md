@@ -150,3 +150,7 @@
 ## Buổi 35
 
 <a href="./Day-35/index.html">Bài tập</a>
+
+## Buổi 36
+
+<a href="./Day-36/index.html">Bài tập</a>
