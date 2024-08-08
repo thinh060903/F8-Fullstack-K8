@@ -158,3 +158,7 @@
 ## Buổi 37
 
 <a href="./Day-37/index.html">Bài tập</a>
+
+## Buổi 38
+
+<a href="./Day-38/index.html">Bài tập</a>

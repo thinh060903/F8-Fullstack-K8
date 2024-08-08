@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smatyx Todos App</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="./css/fontawesome-free-6.5.2-web/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="app-container">
+      <h1>Smatyx Todos App</h1>
+      <div class="search-container">
+        <input type="text" id="search" placeholder="Search Todos" />
+        <button id="search-btn"><i class="fa-solid fa-search"></i></button>
+        <button id="add-btn">Add Todos</button>
+      </div>
+      <ul class="todo-list"></ul>
+      <div id="completed-todos">
+        <button id="completed-btn">Completed Todos 1</button>
+        <ul class="completed-list"></ul>
+      </div>
+    </div>
+
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <input type="text" id="new-todo" placeholder="Add Todos" />
+        <button id="save-btn">Save</button>
+        <button id="cancel-btn">Cancel</button>
+      </div>
+    </div>
+
+    <div id="edit-modal" class="modal">
+      <div class="modal-content">
+        <input type="text" id="edit-todo" placeholder="Edit Todo" />
+        <button id="update-btn">Save</button>
+        <button id="edit-cancel-btn">Cancel</button>
+      </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
