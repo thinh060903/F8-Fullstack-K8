@@ -166,3 +166,7 @@
 ## Buổi 39
 
 <a href="./Day-39/index.html">Bài tập</a>
+
+## Buổi 40
+
+<a href="./Day-40/index.html">Bài tập</a>
