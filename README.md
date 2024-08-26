@@ -174,3 +174,7 @@
 ## Buổi 41
 
 <a href="./Day-41/index.html">Bài tập</a>
+
+## Buổi 43
+
+<a href="./Day-43/index.html">Bài tập</a>

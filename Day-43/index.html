@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blogger</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <div id="header">
+        <div
+          id="userNameDisplay"
+          style="display: none; margin-right: 10px; font-weight: bold"
+        ></div>
+        <button id="newPostBtn" style="display: none" onclick="showBlogForm()">
+          Viết bài mới
+        </button>
+        <button id="logoutBtn" style="display: none" onclick="logout()">
+          Đăng xuất
+        </button>
+      </div>
+
+      <div id="loginForm" class="form-container">
+        <h2>Đăng nhập</h2>
+        <input type="email" id="loginEmail" placeholder="Email" />
+        <input type="password" id="loginPassword" placeholder="Mật khẩu" />
+        <button onclick="login()">Đăng nhập</button>
+        <p>
+          Bạn chưa có tài khoản?
+          <a href="#" onclick="showRegister()">Đăng ký</a>
+        </p>
+      </div>
+
+      <div id="registerForm" class="form-container" style="display: none">
+        <h2>Đăng ký</h2>
+        <input type="text" id="registerName" placeholder="Tên" />
+        <input type="email" id="registerEmail" placeholder="Email" />
+        <input type="password" id="registerPassword" placeholder="Mật khẩu" />
+        <button onclick="register()">Đăng ký</button>
+        <p>
+          Bạn đã có tài khoản? <a href="#" onclick="showLogin()">Đăng nhập</a>
+        </p>
+      </div>
+
+      <div id="blogForm" class="form-container" style="display: none">
+        <h2>Viết bài mới</h2>
+        <input type="text" id="blogTitle" placeholder="Tiêu đề" />
+        <textarea id="blogContent" placeholder="Nội dung"></textarea>
+        <button onclick="postBlog()">Đăng bài</button>
+      </div>
+
+      <div id="blogList">
+        <h2>Blog mới nhất</h2>
+        <div id="blogs"></div>
+      </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
