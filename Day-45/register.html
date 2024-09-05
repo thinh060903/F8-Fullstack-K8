@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đăng ký</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div id="registerForm">
+      <h2>Đăng ký</h2>
+      <input type="text" id="registerName" placeholder="Tên đầy đủ" required />
+      <input type="email" id="registerEmail" placeholder="Email" required />
+      <input
+        type="password"
+        id="registerPassword"
+        placeholder="Mật khẩu"
+        required
+      />
+      <button id="registerBtn">Đăng ký</button>
+      <p>Đã có tài khoản? <a href="login.html">Đăng nhập</a></p>
+    </div>
+
+    <div id="loading" style="display: none">Đang tải...</div>
+
+    <script src="./js/register.js"></script>
+  </body>
+</html>

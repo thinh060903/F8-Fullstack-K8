@@ -1,0 +1,39 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div id="userSection">
+      <div id="userNameDisplay" style="display: none"></div>
+      <button id="logoutBtn" style="display: none">Đăng xuất</button>
+      <button id="newPostBtn" style="display: none">Viết bài mới</button>
+    </div>
+
+    <div id="loginSection">
+      <a href="login.html">Đăng nhập</a> |
+      <a href="register.html">Đăng ký</a>
+    </div>
+
+    <div id="blogForm" style="display: none">
+      <h2>Viết bài mới</h2>
+      <input type="text" id="blogTitle" placeholder="Tiêu đề" />
+      <textarea id="blogContent" placeholder="Nội dung"></textarea>
+      <label for="blogDate">Chọn ngày đăng:</label>
+      <input type="date" id="blogDate" />
+      <button id="postBlogBtn">Đăng bài</button>
+    </div>
+
+    <div id="blogs">
+      <h2>Blog mới nhất</h2>
+    </div>
+
+    <div id="loading" style="display: none">Đang tải...</div>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
