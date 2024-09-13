@@ -185,4 +185,4 @@
 
 ## Buổi 46
 
-<a href="./Day-46/vite-project/index.html">Bài tập</a>
+<a href="https://day46-f8-fullstack-k8.vercel.app">Bài tập</a>
