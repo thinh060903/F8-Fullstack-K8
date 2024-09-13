@@ -182,3 +182,7 @@
 ## Buổi 45
 
 <a href="./Day-45/index.html">Bài tập</a>
+
+## Buổi 46
+
+<a href="./Day-46/vite-project/index.html">Bài tập</a>

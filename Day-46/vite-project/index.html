@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SPA Example</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      header,
+      footer {
+        background-color: #f8f9fa;
+        padding: 10px;
+        text-align: center;
+      }
+      nav ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      nav ul li {
+        display: inline;
+        margin-right: 15px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: #007bff;
+      }
+      main {
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="/" data-route>Trang Chủ</a></li>
+          <li><a href="/gioi-thieu" data-route>Giới Thiệu</a></li>
+          <li><a href="/san-pham" data-route>Sản Phẩm</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="content"></main>
+
+    <footer></footer>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
